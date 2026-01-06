@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/edit_profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Edit Profile"
+            android:textColor="#B50000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/person_icon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/profile_image_border"
+            android:padding="3dp"
+            android:layout_marginBottom="36dp"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#B50000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="..."
+            android:padding="14dp"
+            android:background="@drawable/input_field_bg"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textColor="#B50000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="+62"
+            android:padding="14dp"
+            android:background="@drawable/input_field_bg"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/profle_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Update Profile"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#B50000"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginBottom="20dp" />
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/my_primary"
+            android:layout_gravity="center"
+            android:id="@+id/profile_progress_bar"/>
+
+        <TextView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="#B50000"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
